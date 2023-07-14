@@ -1,17 +1,15 @@
-package com.example.ObjectCounter.service;
+package com.example.CodeOfDuty.service;
 
-import com.example.ObjectCounter.model.ObjectCount;
-import com.example.ObjectCounter.exception.ObjectFoundException;
-import com.example.ObjectCounter.repository.ObjectRepository;
+import com.example.CodeOfDuty.model.ObjectCount;
+import com.example.CodeOfDuty.exception.ObjectFoundException;
+import com.example.CodeOfDuty.repository.ObjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class ObjectCountService {
