@@ -1,7 +1,9 @@
 package com.example.CodeOfDuty.service;
 
 import com.example.CodeOfDuty.model.Patient;
+import com.example.CodeOfDuty.model.VendorDetails;
 import com.example.CodeOfDuty.repository.PatientRepository;
+import com.example.CodeOfDuty.repository.VendorDetailsRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,4 +28,5 @@ public class PatientService {
     public void sendNotification(Integer id){
         log.info("Sending notification"+patientRepository.findByPatientId(id).getPrescription());
     }
+
 }
