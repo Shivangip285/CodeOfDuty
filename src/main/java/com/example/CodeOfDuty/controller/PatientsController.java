@@ -21,4 +21,8 @@ public class PatientsController {
         return patientService.addPatient(patient);
     }
 
+    @GetMapping("/availableMedicineInfo/{id}")
+    public void getAvailableMedicineInfo(@PathVariable(value="id") Integer id ){
+         patientService.availableMedicineInfo(id);
+    }
 }

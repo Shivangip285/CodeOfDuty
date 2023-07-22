@@ -18,7 +18,6 @@ public class VendorController {
 
     @PostMapping("/vendor")
     public VendorDetails addVendor(@RequestBody VendorDetails vendorDetails) {
-        vendorService.availableMedicineInfo(1);
         return vendorService.addVendor(vendorDetails);
     }
 
